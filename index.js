@@ -3,6 +3,7 @@ const rateLimit = require('express-rate-limit');
 const deleteExpiredUrls = require('./deleteExpiredUrls');
 const urlRoutes = require('./routes');
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
