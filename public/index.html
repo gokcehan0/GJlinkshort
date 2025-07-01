@@ -49,7 +49,7 @@
 
             if (response.ok) {
                 // Set the full shortened URL
-                shortUrlInput.value = `https://gjlinkshort.onrender.com//${data.shortUrl}`; // Change this to your actual domain
+                shortUrlInput.value = `https://gjlinkshort.onrender.com/${data.shortUrl}`; // Change this to your actual domain
                 responseDiv.classList.remove('hidden');
             } else {
                 responseDiv.innerHTML = `<p class="text-red-400">Error: ${data}</p>`;
